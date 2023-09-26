@@ -51,6 +51,7 @@ export const GOERLI_TOKEN = new Token(
   'GOERLI',
   'Goerli ETH'
 )
+
 // ABI's
 
 export const ERC20_ABI = [
@@ -58,6 +59,7 @@ export const ERC20_ABI = [
   'function balanceOf(address owner) view returns (uint256)',
   'function decimals() view returns (uint8)',
   'function symbol() view returns (string)',
+  'function fee() view returns (uint256)',
 
   // Authenticated Functions
   'function transfer(address to, uint amount) returns (bool)',
@@ -65,7 +67,8 @@ export const ERC20_ABI = [
 
   // Events
   'event Transfer(address indexed from, address indexed to, uint amount)',
-]
+];
+
 
 export const WETH_ABI = [
   // Wrap ETH

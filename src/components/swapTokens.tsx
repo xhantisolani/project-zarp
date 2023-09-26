@@ -1,4 +1,4 @@
-import { TransactionState, getProvider, getWalletAddress, sendTransaction } from '../libs/providers';
+import { TransactionState, getProvider, getWalletAddress,} from '../libs/providers';
 import { CurrentConfig, Environment } from '../config';
 import { useCallback, useEffect, useState } from 'react';
 import { createTrade, executeTrade, TokenTrade } from '../libs/trading';
