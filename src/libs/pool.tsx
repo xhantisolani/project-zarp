@@ -1,8 +1,9 @@
 import IUniswapV3PoolABI from '@uniswap/v3-core/artifacts/contracts/interfaces/IUniswapV3Pool.sol/IUniswapV3Pool.json'
 import { computePoolAddress } from '@uniswap/v3-sdk'
 import { ethers } from 'ethers'
+
 import { CurrentConfig } from '../config'
-import { POOL_FACTORY_CONTRACT_ADDRESS} from './constants'
+import { POOL_FACTORY_CONTRACT_ADDRESS } from './constants'
 import { getProvider } from './providers'
 
 interface PoolInfo {
@@ -54,5 +55,3 @@ export async function getPoolInfo(): Promise<PoolInfo> {
     tick: slot0[1],
   }
 }
-
-
